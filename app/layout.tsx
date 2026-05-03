@@ -61,6 +61,13 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#83bd81" />
+        <link rel="preconnect" href="https://honeycombperde.com.tr" />
+        <link rel="dns-prefetch" href="https://honeycombperde.com.tr" />
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{background:#fff;color:#2d3847;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.65}*,*::before,*::after{box-sizing:border-box}`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
