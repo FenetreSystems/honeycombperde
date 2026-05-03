@@ -96,15 +96,19 @@ export default function ProcessSection() {
         </div>
 
         {/* CTA banner */}
-        <div className="mt-14 bg-gradient-to-r from-[#404e5e] to-[#2d3847] rounded-3xl p-8 md:p-10 text-center hc-bg-dark relative overflow-hidden">
-          <h3 className="text-xl md:text-2xl font-extrabold text-white mb-3 relative z-10">
+        <div className="mt-14 bg-gradient-to-r from-[#404e5e] to-[#2d3847] rounded-3xl p-8 md:p-10 text-center relative overflow-hidden">
+          {/* Background pattern + readability overlay */}
+          <div className="absolute inset-0 hc-bg-dark opacity-30 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#404e5e]/80 to-[#2d3847]/80 pointer-events-none" />
+
+          <h3 className="text-xl md:text-2xl font-extrabold text-white mb-3 relative z-10 drop-shadow-md">
             Ölçü almaktan başlayın — ücretsiz ve bağlayıcı değil.
           </h3>
-          <p className="text-white/70 text-sm mb-6 relative z-10 max-w-lg mx-auto">
+          <p className="text-white/90 text-sm mb-6 relative z-10 max-w-lg mx-auto leading-relaxed drop-shadow-sm">
             Uzman ekibimiz, pencere tipinize göre en doğru modeli ve rengi önerir.{" "}
-            <a href="/" className="text-[#83bd81] hover:text-[#b8ddb7] font-semibold underline underline-offset-2">Güneşlik perde</a>{" "}
+            <a href="/" className="text-[#a8e4a6] hover:text-[#b8ddb7] font-semibold underline underline-offset-2">Güneşlik perde</a>{" "}
             mi, yoksa{" "}
-            <a href="/" className="text-[#83bd81] hover:text-[#b8ddb7] font-semibold underline underline-offset-2">yaysız cordless perde</a>{" "}
+            <a href="/" className="text-[#a8e4a6] hover:text-[#b8ddb7] font-semibold underline underline-offset-2">yaysız cordless perde</a>{" "}
             mi daha uygun — bunu konuşarak belirliyoruz.
           </p>
           <a
