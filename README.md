@@ -1,4 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Honeycomb Perde — Kışın Sıcak, Yazın Serin
+
+> Bal peteği hücreli yapısıyla üstün ısı ve ses yalıtımı. Türkiye genelinde montajlı teslimat, Avrupa'nın tüm ülkelerine 4-10 günde kapıya teslim.
+
+Bu proje, <a href="https://www.fenetresystems.com" rel="dofollow" target="_blank">Fenetre Systems</a> markası tarafından üretilen **Honeycomb Perde** ürün serisi için geliştirilmiş Next.js landing page sitesidir.
+
+---
+
+## Özellikler
+
+- **Next.js 16** (App Router, Turbopack)
+- **Tailwind CSS v4** — özel marka renkleri (`#83bd81`, `#404e5e`)
+- **Inter** fontu — yerel (CDN bağımlılığı yok)
+- **%100 SEO uyumlu** — schema.org JSON-LD, OpenGraph, Twitter Card
+- **Hexagon tasarım dili** — tüm ikonlar ve görseller altıgen motifi taşır
+- **35 gerçekçi müşteri yorumu** — Türkiye ve Avrupa'dan
+- **Mobil sabit WhatsApp & Telefon barı**
+- **4 Mevsim koruma** içeriği — kış ısı yalıtımı + yaz güneş engelleme
+- **Avrupa teslimat haritası** — Almanya, Hollanda, Belçika, Fransa, Avusturya, İsviçre ve 30+ ülke
+
+---
+
+## Kurulum
+
+```bash
+npm install
+npm run dev        # http://localhost:2366
+npm run build
+npm run start
+```
+
+---
+
+## Sayfa Bölümleri
+
+| Bölüm | Açıklama |
+|-------|----------|
+| Hero | 4 mevsim koruma mesajı, CTA butonları, ürün illüstrasyonu |
+| Ürünler | Honeycomb + 6 ürün kategorisi, hexagon SVG görseller |
+| Marka Değeri | 15 yıllık üretim hikâyesi, sertifikalar, timeline |
+| Teknik Uzmanlık | Isı, ses, UV, enerji karşılaştırma tablosu |
+| Süreç | 6 adımlı sipariş → kurulum akışı |
+| Uygulama Alanları | 6 mekân kategorisi |
+| Müşteri Yorumları | 35 yorum, ülke bayrakları, "Tüm Yorumları Gör" açılır |
+| Hizmet Bölgeleri | Türkiye 7 bölge + 12 Avrupa ülkesi |
+| Kalite & Malzeme | 4 mevsim kış/yaz kartları, sertifika rozetleri |
+| SSS | 12 soru, accordion açılır |
+| CTA | İletişim bilgileri, WhatsApp, bayilik başvurusu |
+| Footer | Sosyal medya, ürün linkleri, dofollow marka linki |
+
+---
+
+## İletişim
+
+- **Telefon:** +90 540 336 38 73
+- **WhatsApp:** +90 540 336 38 73
+- **E-Posta:** info@fenetresystems.com
+- **Adres:** Cumhuriyet Mah. 2233 Sok. No:4/A — Gebze / Kocaeli
+
+---
+
+Üretici: <a href="https://www.fenetresystems.com" rel="dofollow" target="_blank">Fenetre Systems</a>
 
 ## Getting Started
 

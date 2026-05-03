@@ -1,26 +1,101 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "@fontsource/inter/300.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/inter/800.css";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: #83bd81;
+  --color-primary-dark: #6aaa68;
+  --color-primary-light: #b8ddb7;
+  --color-primary-xlight: #eef7ee;
+  --color-brand: #404e5e;
+  --color-brand-dark: #2d3847;
+  --color-brand-light: #5a6a7e;
+  --color-surface: #f8faf8;
+  --color-surface2: #f0f5f0;
+  --color-white: #ffffff;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #2d3847;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.65;
 }
+
+/* Honeycomb SVG pattern utility */
+.hc-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V18L28 2l28 16v32z' fill='none' stroke='%2383bd81' stroke-opacity='0.12' stroke-width='1'/%3E%3Cpath d='M28 100L0 84V52l28-16 28 16v32z' fill='none' stroke='%2383bd81' stroke-opacity='0.12' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+.hc-bg-dark {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V18L28 2l28 16v32z' fill='none' stroke='%23ffffff' stroke-opacity='0.06' stroke-width='1'/%3E%3Cpath d='M28 100L0 84V52l28-16 28 16v32z' fill='none' stroke='%23ffffff' stroke-opacity='0.06' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+/* Smooth hover transitions */
+a, button { transition: all 0.2s ease; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f0f5f0; }
+::-webkit-scrollbar-thumb { background: #83bd81; border-radius: 3px; }
+
+/* Focus outline */
+*:focus-visible { outline: 2px solid #83bd81; outline-offset: 2px; }
+
+/* Section spacing */
+.section-py { padding-top: 5rem; padding-bottom: 5rem; }
+@media (min-width: 768px) { .section-py { padding-top: 6rem; padding-bottom: 6rem; } }
+
+/* Text gradient */
+.text-gradient {
+  background: linear-gradient(135deg, #404e5e 0%, #83bd81 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Green underline decoration */
+.underline-green {
+  position: relative;
+}
+.underline-green::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #83bd81, #6aaa68);
+  border-radius: 2px;
+}
+
+/* Card hover */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(64, 78, 94, 0.12);
+}
+
+/* FAQ accordion */
+.faq-item summary { cursor: pointer; list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+
+/* Mobile bottom bar z-index */
+.mobile-bar { z-index: 9999; }
